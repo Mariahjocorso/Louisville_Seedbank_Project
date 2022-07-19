@@ -29,6 +29,6 @@ import seaborn as sns
 # printing as a dictionary (can this be used for what I want to do???)
 
 Seeds_df = pd.read_csv(
-    'assests\Seedbank-Python-Sheet1.csv', usecols=['Type', 'Sun Requirements'])
+    'assests\Seedbank-Python-Sheet1.csv', usecols=['Type', 'Sun Requirements', ])
 Seeds_df.to_dict(orient='dict')
 print(Seeds_df)
