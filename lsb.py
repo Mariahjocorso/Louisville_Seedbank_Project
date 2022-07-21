@@ -5,24 +5,15 @@ import csv
 
 # Prints list of the seeds
 # NEED TO ADD STRING PRINT TO DESCRIBE LIST
-Seeds_df = pd.read_csv(
-    'assests\Seedbank-Python-Sheet1.csv')
+Seeds_df = os.path.join('assets', 'Seedbank-Python-Sheet1.csv')
 Seeds_type = Seeds_df['Type']
 print(Seeds_type)
 
 
-seed_list = list('data')
-
-Type = []
-Season = []
-Sun_Requirements = []
-Days = []
-
-for item in seed_list['data']:
-    Type.append(item['Vegetable'])
-    Season.append(item['Season'])
-    Sun_Requirements.append(item['Sun Requirements'])
-    Days.append(item['Average Days to Maturity'])
+Seeds_type = Seeds_df['Type']
+harv_sea = Seeds_df['Season']
+sun = Seeds_df['Sun Requirements']
+days = Seeds_df['Average Days to Maturity']
 
 details = pd.DataFrame(
     {'Vegetable': vegetable,
