@@ -10,13 +10,14 @@ print(Seeds_df)
 
 Seeds_df1 = pd.read_csv(
     'assests\Seedbank-Python-Sheet1.csv')
-Seeds_type = Seeds_df1['Type']
-print(Seeds_type)
+#Seeds_type = Seeds_df1['Type']
+# print(Seeds_type)
+print(Seeds_df1.columns.tolist())
 
 Seeds_type = Seeds_df1['Type']
 harv_sea = Seeds_df1['Season']
 sun = Seeds_df1['Sun Requirements']
-days = Seeds_df1['Average Days']
+#day = Seeds_df1['Days Until Yeild']
 
 
 #select = input('Enter Seed Name: ')
