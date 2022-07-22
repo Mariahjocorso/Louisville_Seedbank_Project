@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as num
 import seaborn as sns
 
+from lsb import Seeds_type
+
 # funtion to read the data
 # Seeds_df = pd.read_csv(
 #   'assests\Seedbank-Python-Sheet1.csv')
@@ -28,7 +30,16 @@ import seaborn as sns
 
 # printing as a dictionary (can this be used for what I want to do???)
 
-Seeds_df = pd.read_csv(
-    'assests\Seedbank-Python-Sheet1.csv', usecols=['Type', 'Sun Requirements', ])
-Seeds_df.to_dict(orient='dict')
+# Seeds_df = pd.read_csv(
+#    'assests\Seedbank-Python-Sheet1.csv', usecols=['Type', 'Sun Requirements', ])
+# Seeds_df.to_dict(orient='dict')
+# print(Seeds_df)
+
+path = 'assests\Seedbank-Python-Sheet1.csv'
+Seeds_df = os.path.join(path, 'assets', 'Seedbank-Python-Sheet1.csv')
 print(Seeds_df)
+
+Seeds_df1 = pd.read_csv(
+    'assests\Seedbank-Python-Sheet1.csv')
+Seeds_type = Seeds_df1['Type']
+print(Seeds_type)
