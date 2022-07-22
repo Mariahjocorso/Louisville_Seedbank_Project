@@ -1,4 +1,5 @@
 # First attempt at making a function
+import csv
 import pandas as pd
 import os
 import matplotlib.pyplot as plt
@@ -25,10 +26,24 @@ sun = Seeds_df1['Sun Requirements']
 days = Seeds_df1['Average Days to Maturity ']
 
 
-get_requirements = input('Enter Seed Name: ')
+# I've used full name to avoid duplicate first names in report
 
-if input == Seeds_type():
-    print("We don't have that seed (yet!)")
+with open(path) as csvfile:
+    read_csv = csv.DictReader(csvfile)
+    Seed_name = input('Enter Seed Name: ')
+    for row in read_csv:
+        if Seed_name == row['Type']:
+            for k, v in row.items():
+                print(k, ':', v)
+            break
+    else:
+        print("We don't have that seed (yet!).")
+
+
+#input('Enter Seed Name: ')
+
+# if input != get_requirements:
+#    print("We don't have that seed (yet!)")
 # else:
 #     print(
 #       "Seed's specifications are: \n 'Harvest Season: ', [1] , \n Sun Requiremnts: ', sun, '\n Average Days to Maturity: ', 'days'")
@@ -38,10 +53,10 @@ if input == Seeds_type():
 # break
 
 # PRINTS BARPLOT WORKS
-# sns.barplot(x='Average Days to Maturity ',
-#            y='Type',
-#            data=Seeds_df1,
-#            order=Seeds_df1.sort_values('Average Days to Maturity ').Type)
+sns.barplot(x='Average Days to Maturity ',
+            y='Type',
+            data=Seeds_df1,
+            order=Seeds_df1.sort_values('Average Days to Maturity ').Type)
 
 # Show the plot
-# plt.show()
+plt.show()
