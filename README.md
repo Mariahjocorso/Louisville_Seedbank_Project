@@ -1,5 +1,7 @@
 # Louisville_Seedbank_Project
 The Louisville_Seedbank_Project is able to take input the name of one of the top 20 seeds that the Louisville Seedbank distributes and have three values come out. Value one: Harvest Season, Value two: Days to Maturity, Value three: Sun requirements. A list is printed of the Top 20 seeds, takes input, gives output, and finally shows two barplot graphs. This was completed for Code Louisville Data Analtics 1 course. 
+![Barplot #1](https://github.com/Mariahjocorso/Louisville_Seedbank_Project/blob/main/assests/Seedbank_Project_Figure_1.png)
+![Barplot #2](https://github.com/Mariahjocorso/Louisville_Seedbank_Project/blob/main/assests/Seedbank_Project_Figure_2.png)
 
 # Requirements/Instructions
 - Python 3.10.2
