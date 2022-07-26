@@ -1,4 +1,5 @@
 # First attempt at making a function
+from ast import Break
 import csv
 import pandas as pd
 import os
@@ -20,13 +21,8 @@ Seeds_type = Seeds_df1['Type']
 print(Seeds_type.tolist())
 # print(Seeds_df1.columns.tolist())
 
-Seeds_type = Seeds_df1['Type']
-harv_sea = Seeds_df1['Season']
-sun = Seeds_df1['Sun Requirements']
-days = Seeds_df1['Average Days to Maturity ']
 
-
-# I've used full name to avoid duplicate first names in report
+# Function to take user input and return growing requirement values
 
 with open(path) as csvfile:
     read_csv = csv.DictReader(csvfile)
@@ -40,23 +36,20 @@ with open(path) as csvfile:
         print("We don't have that seed (yet!).")
 
 
-#input('Enter Seed Name: ')
-
-# if input != get_requirements:
-#    print("We don't have that seed (yet!)")
-# else:
-#     print(
-#       "Seed's specifications are: \n 'Harvest Season: ', [1] , \n Sun Requiremnts: ', sun, '\n Average Days to Maturity: ', 'days'")
-
-#   exit_choice = input('Do you want to exit [Yes|No]: ')
-#   if exit_choice == 'No' or exit_choice == 'no':
-# break
-
-# PRINTS BARPLOT WORKS
+# First barplot
 sns.barplot(x='Average Days to Maturity ',
             y='Type',
             data=Seeds_df1,
             order=Seeds_df1.sort_values('Average Days to Maturity ').Type)
 
-# Show the plot
+# Show first plot
 plt.show()
+
+# Second barplot
+# sns.barplot(x='Sun Requirements',
+#            y='Type',
+#            data=Seeds_df1,
+#            order=Seeds_df1.sort_values('Sun Requirements').Type)
+
+# Show second plot
+# plt.show()
