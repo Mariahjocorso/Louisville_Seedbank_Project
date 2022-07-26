@@ -1,10 +1,13 @@
 # First attempt at making a function
-from ast import Break
 import csv
 import pandas as pd
+import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pipregs as pip
+
+pip freeze > requirements.txt
 
 # Prints list of the seeds
 
@@ -13,13 +16,12 @@ print(Welcome_message)
 
 path = 'assests\Seedbank-Python-Sheet1.csv'
 Seeds_df = os.path.join(path, 'assets', 'Seedbank-Python-Sheet1.csv')
-# print(Seeds_df)
+
 
 Seeds_df1 = pd.read_csv(
     'assests\Seedbank-Python-Sheet1.csv')
 Seeds_type = Seeds_df1['Type']
 print(Seeds_type.tolist())
-# print(Seeds_df1.columns.tolist())
 
 
 # Function to take user input and return growing requirement values
@@ -46,10 +48,10 @@ sns.barplot(x='Average Days to Maturity ',
 plt.show()
 
 # Second barplot
-# sns.barplot(x='Sun Requirements',
-#            y='Type',
-#            data=Seeds_df1,
-#            order=Seeds_df1.sort_values('Sun Requirements').Type)
+sns.barplot(x='Average Days to Maturity ',
+            y='Sun Requirements',
+            data=Seeds_df1,)
+# order=Seeds_df1.sort_values('Sun Requirements').Type)
 
 # Show second plot
-# plt.show()
+plt.show()
