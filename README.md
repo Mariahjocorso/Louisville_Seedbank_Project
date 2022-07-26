@@ -5,8 +5,8 @@ The Louisville_Seedbank_Project is able to take input the name of one of the top
 
 # Requirements/Instructions
 - Python 3.10.2
-- most recent version of Google Chrome
-- clone git repository https://github.com/Mariahjocorso/Louisville_Seedbank_Project 
+- Most recent version of Google Chrome
+- Clone git repository https://github.com/Mariahjocorso/Louisville_Seedbank_Project 
 - Run pip install -r requirements.txt to install the required packages.
 - Run python lsb.py once in Louisville_Seedbank_Project main directory.
 - Make sure to capitalize the Seed name when entering input/check that spelling matches printed list.
