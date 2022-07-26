@@ -15,8 +15,7 @@ print(Welcome_message)
 path = 'assests\Seedbank-Python-Sheet1.csv'
 Seeds_df = os.path.join(path, 'assets', 'Seedbank-Python-Sheet1.csv')
 
-Seeds_df1 = pd.read_csv(
-    'assests\Seedbank-Python-Sheet1.csv')
+Seeds_df1 = pd.read_csv(path)
 Seeds_type = Seeds_df1['Type']
 print(Seeds_type.tolist())
 
