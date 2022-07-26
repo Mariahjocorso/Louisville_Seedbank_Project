@@ -5,9 +5,7 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pipregs as pip
 
-pip freeze > requirements.txt
 
 # Prints list of the seeds
 
