@@ -36,3 +36,4 @@ The Louisville_Seedbank_Project is able to take input the name of one of the top
   - make data frame appendable and able to add in new seeds
   - have my function loop back up and ask for a second input after the first seeds (or not there seeds) response shows
   - have an exit option to ask if you want that second input and a way to exit to print graphs
+  - look in to getting both graph to show at the same time and/or find a way to not have to close first graph to get second
