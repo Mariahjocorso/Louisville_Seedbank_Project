@@ -35,11 +35,31 @@ from lsb import Seeds_type
 # Seeds_df.to_dict(orient='dict')
 # print(Seeds_df)
 
-path = 'assests\Seedbank-Python-Sheet1.csv'
-Seeds_df = os.path.join(path, 'assets', 'Seedbank-Python-Sheet1.csv')
-print(Seeds_df)
+#path = 'assests\Seedbank-Python-Sheet1.csv'
+#Seeds_df = os.path.join(path, 'assets', 'Seedbank-Python-Sheet1.csv')
+#print(Seeds_df)
 
-Seeds_df1 = pd.read_csv(
-    'assests\Seedbank-Python-Sheet1.csv')
-Seeds_type = Seeds_df1['Type']
-print(Seeds_type)
+#Seeds_df1 = pd.read_csv(
+#    'assests\Seedbank-Python-Sheet1.csv')
+#Seeds_type = Seeds_df1['Type']
+#print(Seeds_type)
+
+#CODE I DIDN'T END UP NEEDING
+
+#Seeds_type = Seeds_df1['Type']
+#harv_sea = Seeds_df1['Season']
+#sun = Seeds_df1['Sun Requirements']
+#days = Seeds_df1['Average Days to Maturity ']
+
+#input('Enter Seed Name: ')
+
+# if input != get_requirements:
+#    print("We don't have that seed (yet!)")
+# else:
+#     print(
+#       "Seed's specifications are: \n 'Harvest Season: ', [1] , \n Sun Requiremnts: ', sun, '\n Average Days to Maturity: ', 'days'")
+
+# THIS I MAYBE COULD USE LATER?
+#   exit_choice = input('Do you want to exit [Yes|No]: ')
+#   if exit_choice == 'No' or exit_choice == 'no':
+# break
