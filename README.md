@@ -7,7 +7,7 @@ The Louisville_Seedbank_Project is able to take input the name of one of the top
 - Python 3.10.2
 - most recent version of Google Chrome
 - clone git repository https://github.com/Mariahjocorso/Louisville_Seedbank_Project 
-- Run pip install -r requirements.txt to install the required packages.
+- Run pip install ** -r requirements.txt ** to install the required packages.
 
 # Project Requirements Met
 1. Category 1:Read data in.
@@ -16,17 +16,17 @@ The Louisville_Seedbank_Project is able to take input the name of one of the top
 2. Category 2:Manipulate and clean your data.
     - Use custom functions or lambdas to perform specific operations to clean or manipulate your data, 
     return those values, then use them in other parts of your project.
-     - Pulled in first row of csv and print it as a list so that it is easy to input a seed type
+      - Pulled in first row of csv and print it as a list so that it is easy to input a seed type
 3. Category 3:Analyze your data! 
     - Write custom functions to operate on your data. You may discover that you want to find out something 
     particular about data that just doesn’t have a built-in Pandas function that accomplishes your goal.
     Maybe you want your function to read in a DataFrame, search the columns for any mention of “Cars”, then return the lowest-priced car inthe column along with the mileage. This category is very open to interpretation, so any function operating on your data will work.
-     - Made a custom funtion using the csv module to take user input and print out the growing requirments of that seed type.
+      - Made a custom funtion using the csv module to take user input and print out the growing requirments of that seed type.
 4. Category 4:Visualize your data.
     - Make 2 basic plots with matplotlib, seaborn, or any other kind of visualization library that you think looks interesting.
-     - One plot is a bar graph of seed type and the average days of maturity. Second barplot shows the difference bettween the average days of maturity versus the sun requirements. 
+      - One plot is a bar graph of seed type and the average days of maturity. Second barplot shows the difference bettween the average days of maturity versus the sun requirements. 
 5. Category 5:Interpret your data and graphical output.
-    -If using some format other than a notebook, make sure your README explains your project. 
-     -The first barplot is a visulization of the type of seeds verus the days it takes for the plant to reach maturity. This is an imporatant visulization when you're trying to feed a family or themselves. This can be utilized to find a plant that will grow quickly or find what food they may be able to grow within a certain time period that the grower may have access to thier plot or land. 
-     -The second barplot is a visulization of the average days of matuirty vs sun requirments. This can help growers understand that full sun plants on average need longer to reach maturity and it helps vi
+    - If using some format other than a notebook, make sure your README explains your project. 
+      - The first barplot is a visulization of the type of seeds verus the days it takes for the plant to reach maturity. This is an imporatant visulization when you're trying to feed a family or themselves. This can be utilized to find a plant that will grow quickly or find what food they may be able to grow within a certain time period that the grower may have access to thier plot or land. 
+      - The second barplot is a visulization of the average days of matuirty vs sun requirments. This can help growers understand that full sun plants on average need longer to reach maturity and it helps vi
 
