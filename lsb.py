@@ -12,8 +12,7 @@ import seaborn as sns
 Welcome_message = "Here is a list of Louisville Seedbank's Top 20 most popular Seeds!"
 print(Welcome_message)
 
-path = 'assests\Seedbank-Python-Sheet1.csv'
-Seeds_df = os.path.join(path, 'assets', 'Seedbank-Python-Sheet1.csv')
+path = os.path.join('assests', 'Seedbank-Python-Sheet1.csv')
 
 Seeds_df1 = pd.read_csv(path)
 Seeds_type = Seeds_df1['Type']

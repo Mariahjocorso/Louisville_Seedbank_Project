@@ -7,6 +7,7 @@ The Louisville_Seedbank_Project is able to take input the name of one of the top
 - Python 3.10.2
 - Clone git repository https://github.com/Mariahjocorso/Louisville_Seedbank_Project 
 - Run "pip install -r requirements.txt" to install the required packages.
+ - if that does not work run "python3 -m pip install -r requirments.txt" to install required packages.
 - Run python lsb.py once in Louisville_Seedbank_Project main directory.
 - Make sure to capitalize the Seed name when entering input/check that spelling matches printed list.
 
@@ -31,9 +32,11 @@ The Louisville_Seedbank_Project is able to take input the name of one of the top
       - The first barplot is a visulization of the type of seeds verus the days it takes for the plant to reach maturity. This is an imporatant visulization when you're trying to feed a family or themselves. This can be utilized to find a plant that will grow quickly or find what food they may be able to grow within a certain time period that the grower may have access to their plot or land. 
       - The second barplot is a visulization of the average days of matuirty vs sun requirments. This can help growers understand that full sun plants on average need longer to reach maturity and it helps plan their gardens based on the sun on the plot. 
       
-# Improvments 
-## A list of improvments that I feel I can make to my code in the future
+# Improvements 
+## A list of improvements that I feel I can make to my code in the future
   - make data frame appendable and able to add in new seeds
   - have my function loop back up and ask for a second input after the first seeds (or not there seeds) response shows
   - have an exit option to ask if you want that second input and a way to exit to print graphs
   - look in to getting both graph to show at the same time and/or find a way to not have to close first graph to get second
+  - look up clearical (character?) chart to see how to hold two vairble that are txt
+  
